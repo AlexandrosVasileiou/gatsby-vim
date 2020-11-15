@@ -19,7 +19,12 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint": "^7.13.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "prettier": "2.1.2",
+    "typescript": "^4.0.5"
   },
   "keywords": [
     "gatsby",
@@ -31,6 +36,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
